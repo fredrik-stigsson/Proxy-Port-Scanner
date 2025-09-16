@@ -1,0 +1,6 @@
+# Initialize project
+git init
+
+# Get .gitignore file
+wget https://raw.githubusercontent.com/github/gitignore/refs/heads/main/Python.gitignore -O .gitignore
+
