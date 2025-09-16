@@ -4,3 +4,46 @@ git init
 # Get .gitignore file
 wget https://raw.githubusercontent.com/github/gitignore/refs/heads/main/Python.gitignore -O .gitignore
 
+# Add information about me
+git config --global user.email "fredrik.lars.peter.stigsson@gmail.com"
+git config --global user.name "Fredrik Stigsson"
+
+# Add and commit initial release
+git add --all
+git status
+git commit -m 'Initial release'
+git status
+git branch -M main
+git status
+
+# Push initial release to remote repository
+git remote add origin https://github.com/fredrik-stigsson/Proxy-Port-Scanner.git
+git push -u origin main
+
+### Start to work on new feature
+
+## Start from latest main or develop
+git checkout main
+git pull origin main
+
+## Create a new branch
+git checkout -b feature/learning-git
+
+## Add and commit your work
+git add .
+git commit -m "Gitflow and license"
+
+## Push branch to remote repository
+git checkout -b feature/learning-git
+
+## Create a Pull Request (PR) for review
+# Go to GitHub, add a description and assign reviewers for a Pull Request
+
+## Merge the branch after approval and delete it
+git checkout main
+git pull origin main
+git merge feature/learning-git
+git branch -d feature/learning-git
+git push origin --delete feature/learning-git
+
+

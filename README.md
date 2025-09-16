@@ -10,8 +10,6 @@ An anonymous port scanner written in Python that uses a proxy server to hide the
 
 ---
 
-
-
 ## Features
 
 - Scan specified ports or ranges of ports on a target host.
