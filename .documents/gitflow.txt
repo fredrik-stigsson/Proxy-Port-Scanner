@@ -34,7 +34,7 @@ git add .
 git commit -m "Gitflow and license"
 
 ## Push branch to remote repository
-git checkout -b feature/learning-git
+git push origin feature/learning-git
 
 ## Create a Pull Request (PR) for review
 # Go to GitHub, add a description and assign reviewers for a Pull Request
@@ -46,4 +46,24 @@ git merge feature/learning-git
 git branch -d feature/learning-git
 git push origin --delete feature/learning-git
 
+### Start to work on new feature in develop
+
+## Create a develop branch locally
+git branch develop
+git branch
+git checkout develop
+git push origin develop
+
+## Merge develop and main branches remotely
+git checkout main
+git push -u origin main
+
+## Create a feature branch from develop
+git checkout develop
+git pull origin develop
+git checkout -b feature/new-logo
+
+## Add and commit your work
+git add .
+git commit -m "New logo"
 
