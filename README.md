@@ -1,4 +1,6 @@
-<h1 style="text-align:center;padding:0;"><img src="/logo.webp" style="display:inline-block;width:64px;height:64px;" alt="Proxy Port Scanner" /><span style="display:inline-block;vertical-align:top;line-height:64px;">Proxy Port Scanner</span></h1>
+![Proxy Port Scanner](/logo.png)
+
+# Proxy Port Scanner
 
 ![License: MIT](https://img.shields.io/badge/license-MIT-green.svg) [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/fredrik-stigsson/Proxy-Port-Scanner/issues) ![Version 1.0.0](https://img.shields.io/badge/version-1.0.0-blue)
 

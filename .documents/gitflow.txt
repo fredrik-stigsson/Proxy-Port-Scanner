@@ -43,6 +43,7 @@ git push origin feature/learning-git
 git checkout main
 git pull origin main
 git merge feature/learning-git
+(git push -u origin main)
 git branch -d feature/learning-git
 git push origin --delete feature/learning-git
 
@@ -66,4 +67,23 @@ git checkout -b feature/new-logo
 ## Add and commit your work
 git add .
 git commit -m "New logo"
+git push origin feature/new-logo
 
+## Create a Pull Request (PR) for review
+# Go to GitHub, add a description and assign reviewers for a Pull Request
+
+## Merge to develop after approval
+git checkout develop
+git pull origin develop
+git merge feature/new-logo
+git push origin develop
+
+## Merge to main after approval
+git checkout main
+git pull origin main
+git merge feature/new-logo
+git push origin main
+
+## Delete feature branch
+git branch -d feature/new-logo
+git push origin --delete feature/new-logo
